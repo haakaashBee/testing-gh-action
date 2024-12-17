@@ -1,4 +1,4 @@
-name: test-gh-actions
+name: go
 
 on: [push, workflow_dispatch]
 
