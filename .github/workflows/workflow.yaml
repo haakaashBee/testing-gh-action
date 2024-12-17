@@ -12,5 +12,4 @@ jobs:
       - name: Archive code coverage results
         uses: actions/upload-artifact@v3
         with:
-          name: report
           path: test_data/go/report.xml
