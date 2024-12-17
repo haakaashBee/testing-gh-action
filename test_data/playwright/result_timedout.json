@@ -1,0 +1,920 @@
+{
+    "config": {
+      "configFile": "/Users/rjain/git/aspm-test-automation/playwright.config.ts",
+      "rootDir": "/Users/rjain/git/aspm-test-automation/tests",
+      "forbidOnly": false,
+      "fullyParallel": false,
+      "globalSetup": "/Users/rjain/git/aspm-test-automation/core/global.setup.ts",
+      "globalTeardown": "/Users/rjain/git/aspm-test-automation/core/global.tearDown.ts",
+      "globalTimeout": 0,
+      "grep": {},
+      "grepInvert": null,
+      "maxFailures": 0,
+      "metadata": {
+        "actualWorkers": 1
+      },
+      "preserveOutput": "always",
+      "reporter": [
+        [
+          "html",
+          {
+            "open": "never"
+          }
+        ],
+        [
+          "line",
+          null
+        ],
+        [
+          "json",
+          {
+            "outputFile": "./results.json"
+          }
+        ],
+        [
+          "/Users/rjain/git/aspm-test-automation/node_modules/allure-playwright/dist/index.js",
+          {
+            "open": "never"
+          }
+        ]
+      ],
+      "reportSlowTests": {
+        "max": 5,
+        "threshold": 15000
+      },
+      "quiet": false,
+      "projects": [
+        {
+          "outputDir": "/Users/rjain/git/aspm-test-automation/test-results",
+          "repeatEach": 1,
+          "retries": 0,
+          "metadata": {},
+          "id": "chrome",
+          "name": "chrome",
+          "testDir": "/Users/rjain/git/aspm-test-automation/tests",
+          "testIgnore": [],
+          "testMatch": [
+            "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          ],
+          "timeout": 120000
+        },
+        {
+          "outputDir": "/Users/rjain/git/aspm-test-automation/test-results",
+          "repeatEach": 1,
+          "retries": 0,
+          "metadata": {},
+          "id": "firefox",
+          "name": "firefox",
+          "testDir": "/Users/rjain/git/aspm-test-automation/tests",
+          "testIgnore": [],
+          "testMatch": [
+            "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          ],
+          "timeout": 120000
+        },
+        {
+          "outputDir": "/Users/rjain/git/aspm-test-automation/test-results",
+          "repeatEach": 1,
+          "retries": 0,
+          "metadata": {},
+          "id": "safari",
+          "name": "safari",
+          "testDir": "/Users/rjain/git/aspm-test-automation/tests",
+          "testIgnore": [],
+          "testMatch": [
+            "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          ],
+          "timeout": 120000
+        },
+        {
+          "outputDir": "/Users/rjain/git/aspm-test-automation/test-results",
+          "repeatEach": 1,
+          "retries": 0,
+          "metadata": {},
+          "id": "api",
+          "name": "api",
+          "testDir": "/Users/rjain/git/aspm-test-automation/tests",
+          "testIgnore": [],
+          "testMatch": [
+            "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          ],
+          "timeout": 120000
+        }
+      ],
+      "shard": null,
+      "updateSnapshots": "missing",
+      "version": "1.44.0",
+      "workers": 6,
+      "webServer": null
+    },
+    "suites": [
+      {
+        "title": "configurations/properties.test.ts",
+        "file": "configurations/properties.test.ts",
+        "column": 0,
+        "line": 0,
+        "specs": [],
+        "suites": [
+          {
+            "title": "The Configurations:Properties page,",
+            "file": "configurations/properties.test.ts",
+            "line": 5,
+            "column": 6,
+            "specs": [
+              {
+                "title": "Create STRING property",
+                "ok": true,
+                "tags": [
+                  "PropertyTest"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [],
+                    "expectedStatus": "passed",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": 0,
+                        "status": "passed",
+                        "duration": 52902,
+                        "errors": [],
+                        "stdout": [
+                          {
+                            "text": "ACTION: Navigated to URL: https://saas-preprod.beescloud.com/\n"
+                          },
+                          {
+                            "text": "INFO: 'Sign-in button' is displayed\n"
+                          },
+                          {
+                            "text": "VERIFICATION: PASSED 'Sign-in button' displayed status is 'true'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Sign-in button'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered 'cbc-qa-automation@cloudbees.com' in 'Username' textbox\n"
+                          },
+                          {
+                            "text": "ACTION: Entered ********* in 'Password'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Sign-in button'\n"
+                          },
+                          {
+                            "text": "Logged in successfully\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Home Button on left side menu'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Configurations on left side menu'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Properties menu item on configurations section'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Create Property Button'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered 'AutoTestProperty' in 'Property Name Textbox'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered 'Auto Test Property Description' in 'Property Description Textbox'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Property Data type Dropdown'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Property Data type Dropdown'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered 'test value' in 'String Property Value Textarea' textbox\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Secret property key input'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Protected property key input'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Property Submit Button'\n"
+                          },
+                          {
+                            "text": "INFO: Value read from 'Property successfully created' is: 'Property successfully created'\n"
+                          },
+                          {
+                            "text": "VERIFICATION: PASSED. Expected: 'successfully created' is present in Actual:  'Property successfully created'\n"
+                          },
+                          {
+                            "text": "Property successfully created\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Home Button on left side menu'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Configurations on left side menu'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Properties menu item on configurations section'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered 'AutoTestProperty' in 'Property search filter' textbox\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Property crud menu'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Property crud delete'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Property delete button in dialogue box'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered '' in 'Property search filter' textbox\n"
+                          },
+                          {
+                            "text": "INFO: Value read from 'Property successfully removed' is: 'Property successfully deleted'\n"
+                          },
+                          {
+                            "text": "VERIFICATION: PASSED. Expected: 'Property successfully deleted' is present in Actual:  'Property successfully deleted'\n"
+                          },
+                          {
+                            "text": "Property successfully removed\n"
+                          }
+                        ],
+                        "stderr": [],
+                        "retry": 0,
+                        "steps": [
+                          {
+                            "title": "ACTION: Clicked on 'Home Button on left side menu'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Configurations on left side menu'",
+                            "duration": 1
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Properties menu item on configurations section'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Create Property Button'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Entered 'AutoTestProperty' in 'Property Name Textbox'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Entered 'Auto Test Property Description' in 'Property Description Textbox'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Property Data type Dropdown'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Property Data type Dropdown'",
+                            "duration": 1
+                          },
+                          {
+                            "title": "ACTION: Entered 'test value' in 'String Property Value Textarea' textbox",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Secret property key input'",
+                            "duration": 1
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Protected property key input'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Property Submit Button'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "Property successfully created",
+                            "duration": 1
+                          }
+                        ],
+                        "startTime": "2024-11-13T12:14:14.381Z",
+                        "attachments": [
+                          {
+                            "name": "screenshot",
+                            "contentType": "image/png",
+                            "path": "/Users/rjain/git/aspm-test-automation/test-results/configurations-properties--4e3eb-page-Create-STRING-property-chrome/test-finished-1.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "status": "expected"
+                  }
+                ],
+                "id": "1ea0c0fe45520355eabc-9194fe095c231cc882ea",
+                "file": "configurations/properties.test.ts",
+                "line": 15,
+                "column": 7
+              },
+              {
+                "title": "Create NUMBER property",
+                "ok": false,
+                "tags": [
+                  "PropertyTest"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [],
+                    "expectedStatus": "passed",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": 0,
+                        "status": "failed",
+                        "duration": 201891,
+                        "error": {
+                          "message": "Error: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n",
+                          "stack": "Error: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n\n    at LoginPage.waitTillElementIsPresent (/Users/rjain/git/aspm-test-automation/core/actions.core.ts:562:13)\n    at LoginPage.loginToSaas (/Users/rjain/git/aspm-test-automation/pages/loginPage.ts:33:5)\n    at /Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts:8:5",
+                          "location": {
+                            "file": "/Users/rjain/git/aspm-test-automation/core/actions.core.ts",
+                            "column": 13,
+                            "line": 562
+                          },
+                          "snippet": "\u001b[90m   at \u001b[39m../core/actions.core.ts:562\n\n\u001b[0m \u001b[90m 560 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 561 |\u001b[39m       errorLog(error)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 562 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(error)\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 563 |\u001b[39m     }\n \u001b[90m 564 |\u001b[39m   }\n \u001b[90m 565 |\u001b[39m\u001b[0m"
+                        },
+                        "errors": [
+                          {
+                            "location": {
+                              "file": "/Users/rjain/git/aspm-test-automation/core/actions.core.ts",
+                              "column": 13,
+                              "line": 562
+                            },
+                            "message": "Error: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../core/actions.core.ts:562\n\n\u001b[0m \u001b[90m 560 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 561 |\u001b[39m       errorLog(error)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 562 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(error)\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 563 |\u001b[39m     }\n \u001b[90m 564 |\u001b[39m   }\n \u001b[90m 565 |\u001b[39m\u001b[0m\n\n\u001b[2m    at LoginPage.waitTillElementIsPresent (/Users/rjain/git/aspm-test-automation/core/actions.core.ts:562:13)\u001b[22m\n\u001b[2m    at LoginPage.loginToSaas (/Users/rjain/git/aspm-test-automation/pages/loginPage.ts:33:5)\u001b[22m\n\u001b[2m    at /Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts:8:5\u001b[22m"
+                          },
+                          {
+                            "location": {
+                              "file": "/Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts",
+                              "column": 8,
+                              "line": 11
+                            },
+                            "message": "\u001b[31mTest timeout of 120000ms exceeded while running \"afterEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   })\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mafterEach(\u001b[36masync\u001b[39m ({ propertiesPage }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m propertiesPage\u001b[33m.\u001b[39mdeleteProperty(data\u001b[33m.\u001b[39mpropertyName)\n \u001b[90m 13 |\u001b[39m   })\n \u001b[90m 14 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts:11:8\u001b[22m"
+                          }
+                        ],
+                        "stdout": [
+                          {
+                            "text": "ACTION: Navigated to URL: https://saas-preprod.beescloud.com/\n"
+                          },
+                          {
+                            "text": "INFO: 'Sign-in button' is displayed\n"
+                          },
+                          {
+                            "text": "VERIFICATION: PASSED 'Sign-in button' displayed status is 'true'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Sign-in button'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered 'cbc-qa-automation@cloudbees.com' in 'Username' textbox\n"
+                          },
+                          {
+                            "text": "ACTION: Entered ********* in 'Password'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Sign-in button'\n"
+                          },
+                          {
+                            "text": "ERROR: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n\n"
+                          }
+                        ],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-13T12:15:07.533Z",
+                        "attachments": [
+                          {
+                            "name": "screenshot",
+                            "contentType": "image/png",
+                            "path": "/Users/rjain/git/aspm-test-automation/test-results/configurations-properties--c16ef-page-Create-NUMBER-property-chrome/test-failed-1.png"
+                          }
+                        ],
+                        "errorLocation": {
+                          "file": "/Users/rjain/git/aspm-test-automation/core/actions.core.ts",
+                          "column": 13,
+                          "line": 562
+                        }
+                      }
+                    ],
+                    "status": "unexpected"
+                  }
+                ],
+                "id": "1ea0c0fe45520355eabc-0d29a6de348f8daa6865",
+                "file": "configurations/properties.test.ts",
+                "line": 21,
+                "column": 7
+              },
+              {
+                "title": "Create BOOLEAN property",
+                "ok": true,
+                "tags": [
+                  "PropertyTest"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [],
+                    "expectedStatus": "passed",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": 1,
+                        "status": "passed",
+                        "duration": 44783,
+                        "errors": [],
+                        "stdout": [
+                          {
+                            "text": "ACTION: Navigated to URL: https://saas-preprod.beescloud.com/\n"
+                          },
+                          {
+                            "text": "INFO: 'Sign-in button' is displayed\n"
+                          },
+                          {
+                            "text": "VERIFICATION: PASSED 'Sign-in button' displayed status is 'true'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Sign-in button'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered 'cbc-qa-automation@cloudbees.com' in 'Username' textbox\n"
+                          },
+                          {
+                            "text": "ACTION: Entered ********* in 'Password'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Sign-in button'\n"
+                          },
+                          {
+                            "text": "Logged in successfully\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Home Button on left side menu'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Configurations on left side menu'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Properties menu item on configurations section'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Create Property Button'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered 'AutoTestProperty' in 'Property Name Textbox'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered 'Auto Test Property Description' in 'Property Description Textbox'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Property Data type Dropdown'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Property Data type Dropdown'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Boolean Property Value Select'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Boolean Property True Value Select'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Protected property key input'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Property Submit Button'\n"
+                          },
+                          {
+                            "text": "INFO: Value read from 'Property successfully created' is: 'Property successfully created'\n"
+                          },
+                          {
+                            "text": "VERIFICATION: PASSED. Expected: 'successfully created' is present in Actual:  'Property successfully created'\n"
+                          },
+                          {
+                            "text": "Property successfully created\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Home Button on left side menu'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Configurations on left side menu'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Properties menu item on configurations section'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered 'AutoTestProperty' in 'Property search filter' textbox\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Property crud menu'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Property crud delete'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Property delete button in dialogue box'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered '' in 'Property search filter' textbox\n"
+                          },
+                          {
+                            "text": "INFO: Value read from 'Property successfully removed' is: 'Property successfully deleted'\n"
+                          },
+                          {
+                            "text": "VERIFICATION: PASSED. Expected: 'Property successfully deleted' is present in Actual:  'Property successfully deleted'\n"
+                          },
+                          {
+                            "text": "Property successfully removed\n"
+                          }
+                        ],
+                        "stderr": [],
+                        "retry": 0,
+                        "steps": [
+                          {
+                            "title": "ACTION: Clicked on 'Home Button on left side menu'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Configurations on left side menu'",
+                            "duration": 1
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Properties menu item on configurations section'",
+                            "duration": 1
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Create Property Button'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Entered 'AutoTestProperty' in 'Property Name Textbox'",
+                            "duration": 1
+                          },
+                          {
+                            "title": "ACTION: Entered 'Auto Test Property Description' in 'Property Description Textbox'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Property Data type Dropdown'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Property Data type Dropdown'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Boolean Property Value Select'",
+                            "duration": 1
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Boolean Property True Value Select'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Protected property key input'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "ACTION: Clicked on 'Property Submit Button'",
+                            "duration": 0
+                          },
+                          {
+                            "title": "Property successfully created",
+                            "duration": 1
+                          }
+                        ],
+                        "startTime": "2024-11-13T12:18:29.772Z",
+                        "attachments": [
+                          {
+                            "name": "screenshot",
+                            "contentType": "image/png",
+                            "path": "/Users/rjain/git/aspm-test-automation/test-results/configurations-properties--0988f-age-Create-BOOLEAN-property-chrome/test-finished-1.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "status": "expected"
+                  }
+                ],
+                "id": "1ea0c0fe45520355eabc-4118c2d0449b02b9d320",
+                "file": "configurations/properties.test.ts",
+                "line": 27,
+                "column": 7
+              },
+              {
+                "title": "Edit STRING Property",
+                "ok": false,
+                "tags": [
+                  "PropertyTest"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [],
+                    "expectedStatus": "passed",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": 1,
+                        "status": "failed",
+                        "duration": 203548,
+                        "error": {
+                          "message": "Error: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n",
+                          "stack": "Error: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n\n    at LoginPage.waitTillElementIsPresent (/Users/rjain/git/aspm-test-automation/core/actions.core.ts:562:13)\n    at LoginPage.loginToSaas (/Users/rjain/git/aspm-test-automation/pages/loginPage.ts:33:5)\n    at /Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts:8:5",
+                          "location": {
+                            "file": "/Users/rjain/git/aspm-test-automation/core/actions.core.ts",
+                            "column": 13,
+                            "line": 562
+                          },
+                          "snippet": "\u001b[90m   at \u001b[39m../core/actions.core.ts:562\n\n\u001b[0m \u001b[90m 560 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 561 |\u001b[39m       errorLog(error)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 562 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(error)\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 563 |\u001b[39m     }\n \u001b[90m 564 |\u001b[39m   }\n \u001b[90m 565 |\u001b[39m\u001b[0m"
+                        },
+                        "errors": [
+                          {
+                            "location": {
+                              "file": "/Users/rjain/git/aspm-test-automation/core/actions.core.ts",
+                              "column": 13,
+                              "line": 562
+                            },
+                            "message": "Error: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../core/actions.core.ts:562\n\n\u001b[0m \u001b[90m 560 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 561 |\u001b[39m       errorLog(error)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 562 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(error)\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 563 |\u001b[39m     }\n \u001b[90m 564 |\u001b[39m   }\n \u001b[90m 565 |\u001b[39m\u001b[0m\n\n\u001b[2m    at LoginPage.waitTillElementIsPresent (/Users/rjain/git/aspm-test-automation/core/actions.core.ts:562:13)\u001b[22m\n\u001b[2m    at LoginPage.loginToSaas (/Users/rjain/git/aspm-test-automation/pages/loginPage.ts:33:5)\u001b[22m\n\u001b[2m    at /Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts:8:5\u001b[22m"
+                          },
+                          {
+                            "location": {
+                              "file": "/Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts",
+                              "column": 8,
+                              "line": 11
+                            },
+                            "message": "\u001b[31mTest timeout of 120000ms exceeded while running \"afterEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   })\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mafterEach(\u001b[36masync\u001b[39m ({ propertiesPage }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m propertiesPage\u001b[33m.\u001b[39mdeleteProperty(data\u001b[33m.\u001b[39mpropertyName)\n \u001b[90m 13 |\u001b[39m   })\n \u001b[90m 14 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts:11:8\u001b[22m"
+                          }
+                        ],
+                        "stdout": [
+                          {
+                            "text": "ACTION: Navigated to URL: https://saas-preprod.beescloud.com/\n"
+                          },
+                          {
+                            "text": "INFO: 'Sign-in button' is displayed\n"
+                          },
+                          {
+                            "text": "VERIFICATION: PASSED 'Sign-in button' displayed status is 'true'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Sign-in button'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered 'cbc-qa-automation@cloudbees.com' in 'Username' textbox\n"
+                          },
+                          {
+                            "text": "ACTION: Entered ********* in 'Password'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Sign-in button'\n"
+                          },
+                          {
+                            "text": "ERROR: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n\n"
+                          }
+                        ],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-13T12:19:14.685Z",
+                        "attachments": [
+                          {
+                            "name": "screenshot",
+                            "contentType": "image/png",
+                            "path": "/Users/rjain/git/aspm-test-automation/test-results/configurations-properties--0a282-s-page-Edit-STRING-Property-chrome/test-failed-1.png"
+                          }
+                        ],
+                        "errorLocation": {
+                          "file": "/Users/rjain/git/aspm-test-automation/core/actions.core.ts",
+                          "column": 13,
+                          "line": 562
+                        }
+                      }
+                    ],
+                    "status": "unexpected"
+                  }
+                ],
+                "id": "1ea0c0fe45520355eabc-7b5680f0a49d6a4742f8",
+                "file": "configurations/properties.test.ts",
+                "line": 33,
+                "column": 7
+              },
+              {
+                "title": "Edit NUMBER Property",
+                "ok": false,
+                "tags": [
+                  "PropertyTest"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [],
+                    "expectedStatus": "passed",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": 2,
+                        "status": "failed",
+                        "duration": 207506,
+                        "error": {
+                          "message": "Error: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n",
+                          "stack": "Error: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n\n    at LoginPage.waitTillElementIsPresent (/Users/rjain/git/aspm-test-automation/core/actions.core.ts:562:13)\n    at LoginPage.loginToSaas (/Users/rjain/git/aspm-test-automation/pages/loginPage.ts:33:5)\n    at /Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts:8:5",
+                          "location": {
+                            "file": "/Users/rjain/git/aspm-test-automation/core/actions.core.ts",
+                            "column": 13,
+                            "line": 562
+                          },
+                          "snippet": "\u001b[90m   at \u001b[39m../core/actions.core.ts:562\n\n\u001b[0m \u001b[90m 560 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 561 |\u001b[39m       errorLog(error)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 562 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(error)\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 563 |\u001b[39m     }\n \u001b[90m 564 |\u001b[39m   }\n \u001b[90m 565 |\u001b[39m\u001b[0m"
+                        },
+                        "errors": [
+                          {
+                            "location": {
+                              "file": "/Users/rjain/git/aspm-test-automation/core/actions.core.ts",
+                              "column": 13,
+                              "line": 562
+                            },
+                            "message": "Error: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../core/actions.core.ts:562\n\n\u001b[0m \u001b[90m 560 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 561 |\u001b[39m       errorLog(error)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 562 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(error)\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 563 |\u001b[39m     }\n \u001b[90m 564 |\u001b[39m   }\n \u001b[90m 565 |\u001b[39m\u001b[0m\n\n\u001b[2m    at LoginPage.waitTillElementIsPresent (/Users/rjain/git/aspm-test-automation/core/actions.core.ts:562:13)\u001b[22m\n\u001b[2m    at LoginPage.loginToSaas (/Users/rjain/git/aspm-test-automation/pages/loginPage.ts:33:5)\u001b[22m\n\u001b[2m    at /Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts:8:5\u001b[22m"
+                          },
+                          {
+                            "location": {
+                              "file": "/Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts",
+                              "column": 8,
+                              "line": 11
+                            },
+                            "message": "\u001b[31mTest timeout of 120000ms exceeded while running \"afterEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   })\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mafterEach(\u001b[36masync\u001b[39m ({ propertiesPage }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m propertiesPage\u001b[33m.\u001b[39mdeleteProperty(data\u001b[33m.\u001b[39mpropertyName)\n \u001b[90m 13 |\u001b[39m   })\n \u001b[90m 14 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts:11:8\u001b[22m"
+                          }
+                        ],
+                        "stdout": [
+                          {
+                            "text": "ACTION: Navigated to URL: https://saas-preprod.beescloud.com/\n"
+                          },
+                          {
+                            "text": "INFO: 'Sign-in button' is displayed\n"
+                          },
+                          {
+                            "text": "VERIFICATION: PASSED 'Sign-in button' displayed status is 'true'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Sign-in button'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered 'cbc-qa-automation@cloudbees.com' in 'Username' textbox\n"
+                          },
+                          {
+                            "text": "ACTION: Entered ********* in 'Password'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Sign-in button'\n"
+                          },
+                          {
+                            "text": "ERROR: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n\n"
+                          }
+                        ],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-13T12:22:38.555Z",
+                        "attachments": [
+                          {
+                            "name": "screenshot",
+                            "contentType": "image/png",
+                            "path": "/Users/rjain/git/aspm-test-automation/test-results/configurations-properties--ad02f-s-page-Edit-NUMBER-Property-chrome/test-failed-1.png"
+                          }
+                        ],
+                        "errorLocation": {
+                          "file": "/Users/rjain/git/aspm-test-automation/core/actions.core.ts",
+                          "column": 13,
+                          "line": 562
+                        }
+                      }
+                    ],
+                    "status": "unexpected"
+                  }
+                ],
+                "id": "1ea0c0fe45520355eabc-844c36d90c4f8a075c06",
+                "file": "configurations/properties.test.ts",
+                "line": 43,
+                "column": 7
+              },
+              {
+                "title": "Edit BOOLEAN Property",
+                "ok": false,
+                "tags": [
+                  "PropertyTest"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [],
+                    "expectedStatus": "passed",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": 3,
+                        "status": "failed",
+                        "duration": 208584,
+                        "error": {
+                          "message": "Error: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n",
+                          "stack": "Error: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n\n    at LoginPage.waitTillElementIsPresent (/Users/rjain/git/aspm-test-automation/core/actions.core.ts:562:13)\n    at LoginPage.loginToSaas (/Users/rjain/git/aspm-test-automation/pages/loginPage.ts:33:5)\n    at /Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts:8:5",
+                          "location": {
+                            "file": "/Users/rjain/git/aspm-test-automation/core/actions.core.ts",
+                            "column": 13,
+                            "line": 562
+                          },
+                          "snippet": "\u001b[90m   at \u001b[39m../core/actions.core.ts:562\n\n\u001b[0m \u001b[90m 560 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 561 |\u001b[39m       errorLog(error)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 562 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(error)\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 563 |\u001b[39m     }\n \u001b[90m 564 |\u001b[39m   }\n \u001b[90m 565 |\u001b[39m\u001b[0m"
+                        },
+                        "errors": [
+                          {
+                            "location": {
+                              "file": "/Users/rjain/git/aspm-test-automation/core/actions.core.ts",
+                              "column": 13,
+                              "line": 562
+                            },
+                            "message": "Error: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../core/actions.core.ts:562\n\n\u001b[0m \u001b[90m 560 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 561 |\u001b[39m       errorLog(error)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 562 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(error)\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 563 |\u001b[39m     }\n \u001b[90m 564 |\u001b[39m   }\n \u001b[90m 565 |\u001b[39m\u001b[0m\n\n\u001b[2m    at LoginPage.waitTillElementIsPresent (/Users/rjain/git/aspm-test-automation/core/actions.core.ts:562:13)\u001b[22m\n\u001b[2m    at LoginPage.loginToSaas (/Users/rjain/git/aspm-test-automation/pages/loginPage.ts:33:5)\u001b[22m\n\u001b[2m    at /Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts:8:5\u001b[22m"
+                          },
+                          {
+                            "location": {
+                              "file": "/Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts",
+                              "column": 8,
+                              "line": 11
+                            },
+                            "message": "\u001b[31mTest timeout of 120000ms exceeded while running \"afterEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   })\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mafterEach(\u001b[36masync\u001b[39m ({ propertiesPage }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m propertiesPage\u001b[33m.\u001b[39mdeleteProperty(data\u001b[33m.\u001b[39mpropertyName)\n \u001b[90m 13 |\u001b[39m   })\n \u001b[90m 14 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/rjain/git/aspm-test-automation/tests/configurations/properties.test.ts:11:8\u001b[22m"
+                          }
+                        ],
+                        "stdout": [
+                          {
+                            "text": "ACTION: Navigated to URL: https://saas-preprod.beescloud.com/\n"
+                          },
+                          {
+                            "text": "INFO: 'Sign-in button' is displayed\n"
+                          },
+                          {
+                            "text": "VERIFICATION: PASSED 'Sign-in button' displayed status is 'true'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Sign-in button'\n"
+                          },
+                          {
+                            "text": "ACTION: Entered 'cbc-qa-automation@cloudbees.com' in 'Username' textbox\n"
+                          },
+                          {
+                            "text": "ACTION: Entered ********* in 'Password'\n"
+                          },
+                          {
+                            "text": "ACTION: Clicked on 'Sign-in button'\n"
+                          },
+                          {
+                            "text": "ERROR: TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-testid=\"header-title\"]:has-text(\"Welcome to CloudBees\")') to be visible\u001b[22m\n\n"
+                          }
+                        ],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-13T12:26:06.521Z",
+                        "attachments": [
+                          {
+                            "name": "screenshot",
+                            "contentType": "image/png",
+                            "path": "/Users/rjain/git/aspm-test-automation/test-results/configurations-properties--1ef2c--page-Edit-BOOLEAN-Property-chrome/test-failed-1.png"
+                          }
+                        ],
+                        "errorLocation": {
+                          "file": "/Users/rjain/git/aspm-test-automation/core/actions.core.ts",
+                          "column": 13,
+                          "line": 562
+                        }
+                      }
+                    ],
+                    "status": "unexpected"
+                  }
+                ],
+                "id": "1ea0c0fe45520355eabc-e93e9c3a590b6f8b405b",
+                "file": "configurations/properties.test.ts",
+                "line": 53,
+                "column": 7
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "stats": {
+      "startTime": "2024-11-13T12:14:14.097Z",
+      "duration": 921199.562,
+      "expected": 2,
+      "skipped": 0,
+      "unexpected": 4,
+      "flaky": 0
+    }
+  }

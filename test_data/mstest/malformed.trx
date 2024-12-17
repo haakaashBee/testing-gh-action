@@ -1,0 +1,12 @@
+ow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+            at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)
+            at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+            at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+            at Pickles.TestHarness.MSTest.AdditionFeature.ScenarioCleanup() in C:\dev\pickles-results-harness\Pickles.TestHarness\Pickles.TestHarness.MSTest\Addition.feature.cs:line 0
+            at Pickles.TestHarness.MSTest.AdditionFeature.FailToAddTwoNumbers() in c:\dev\pickles-results-harness\Pickles.TestHarness\Pickles.TestHarness.MSTest\Addition.feature:line 18
+          </StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
