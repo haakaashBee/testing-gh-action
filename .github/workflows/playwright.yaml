@@ -12,5 +12,5 @@ jobs:
       - name: Archive code coverage results
         uses: actions/upload-artifact@v3
         with:
-          name: result.json
+          name: playwright.json
           path: test_data/playwright/result.json

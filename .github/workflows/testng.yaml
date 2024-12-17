@@ -12,5 +12,5 @@ jobs:
       - name: Archive code coverage results
         uses: actions/upload-artifact@v3
         with:
-          name: testng-results.xml
+          name: testng.xml
           path: test_data/testng/testng-results.xml
