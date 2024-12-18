@@ -13,4 +13,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: reports
-          path: test_data/go/only_xml/report.xml
+          path: test_data/go/only_xml/
