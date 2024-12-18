@@ -12,5 +12,5 @@ jobs:
       - name: Archive code coverage results
         uses: actions/upload-artifact@v3
         with:
-          name: junit.xml
+          name: reports
           path: test_data/junit/cb_workspace/report.xml
